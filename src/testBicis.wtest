@@ -1,0 +1,44 @@
+import bicis.*
+import accesorios.*
+
+describe"pruebas de bicis"{
+	var bici1 = new Bicicleta(rodado = 28,largo = 150,marca ="Olmo", accesorios = #{farolito})
+	var bici2 = new Bicicleta(rodado = 26,largo = 110,marca ="Legnano", accesorios = #{farolito, canasto, morralDeBici})
+	var bici3 = new Bicicleta(rodado = 20,largo = 90,marca ="Legnano", accesorios = #{morralDeBici})
+	
+	
+	test "bici1: altura 85, velocidad de crucero 34, carga 0, peso 14.5 (14 de la bici + 0.5 del farolito),
+			 tiene luz (por el farolito), tiene 1 accesorio liviano."{
+		assert.equals(85, bici1.altura())
+		assert.equals(34, bici1.velocidadCrucero())
+		assert.equals(0, bici1.carga())
+		assert.equals(14.5, bici1.peso())
+		assert.that(bici1.tieneLuz())
+		assert.equals(1, bici1.cantAccesoriosLivianos())
+	}
+	
+	test "bici2: altura 80, velocidad de crucero 28, peso 15.5 (13 de la bici, 0.5 del farolito, 0.8 del canasto, 1.2 del morral), carga 23 (16 del canasto más 7 del morral), 
+			tiene luz (porque el morral tiene ojo de gato), 2 accesorios livianos (el farolito y el canasto)."{
+		canasto.volumen(8)
+		morralDeBici.largo(21)
+		morralDeBici.ojoDeGato(true)
+		assert.equals(80, bici2.altura())
+		assert.equals(28, bici2.velocidadCrucero())
+		assert.equals(23, bici2.carga())
+		assert.equals(15.5, bici2.peso())
+		assert.that(bici2.tieneLuz())
+		assert.equals(2, bici2.cantAccesoriosLivianos())		
+	}
+	
+	test "bici3:  altura 65, velocidad de crucero 22, carga 2, peso 11.2 (10 de la bici + 1.2 del morral), 
+			no tiene luz, no tiene ningún accesorio liviano."{
+		morralDeBici.largo(6)
+		morralDeBici.ojoDeGato(false)
+		assert.equals(65, bici3.altura())
+		assert.equals(22, bici3.velocidadCrucero())
+		assert.equals(2, bici3.carga())
+		assert.equals(11.2, bici3.peso())
+		assert.notThat(bici3.tieneLuz())
+		assert.equals(0, bici3.cantAccesoriosLivianos())		
+	}
+}
