@@ -57,5 +57,17 @@ class Bicicleta{
 	method altura(){
 		return altura
 	}
+<<<<<<< HEAD
 >>>>>>> 14c3bba9e0bf82a2b61558840a70b8dc8285bd1a
+=======
+	
+	method pruebasEzequiel(){
+		return altura
+	}
+>>>>>>> 5ecad2312ac1bd46aafdd49d402dd13dae46a880
+}
+
+
+method pruebaNahuel{
+	return algo
 }
