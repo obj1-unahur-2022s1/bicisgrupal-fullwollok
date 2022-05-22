@@ -11,4 +11,8 @@ class Bicicleta{
 	method altura(){
 		return altura
 	}
+	
+	method pruebasEzequiel(){
+		return altura
+	}
 }
