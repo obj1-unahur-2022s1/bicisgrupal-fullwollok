@@ -1,4 +1,5 @@
 class Bicicleta{
+<<<<<<< HEAD
 	method s{
 		
 	}
@@ -43,4 +44,18 @@ class Bicicleta{
 	
 	
 	
+=======
+	var altura = 0
+	method prueba(){
+		return "prueba de pull"
+	}
+	
+	method ff123(){
+		return null
+	}
+	
+	method altura(){
+		return altura
+	}
+>>>>>>> 14c3bba9e0bf82a2b61558840a70b8dc8285bd1a
 }
