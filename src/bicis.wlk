@@ -1,9 +1,46 @@
 class Bicicleta{
-	method prueba(){
-		return "prueba de pull"
+	method s{
+		
 	}
 	
-	method ff123(){
-		return null
-	}
+	asljdnaS
+	DAsd
+	adasd
+	asdasdas
+	dasd
+	asda
+	da
+	sda
+	sda
+	da
+	d
+	a
+	d
+	asd
+	as
+	dasd
+	asd
+	a
+	dsa
+	da
+	
+	asd
+	a
+	d
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
