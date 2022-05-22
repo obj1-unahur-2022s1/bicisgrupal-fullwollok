@@ -1,3 +1,5 @@
+import bicis.*
+
 object farolito {
 	
 	method peso() = 0.5
