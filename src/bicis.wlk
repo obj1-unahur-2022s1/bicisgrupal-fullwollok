@@ -1,4 +1,5 @@
 class Bicicleta{
-	//prueba para pull 
-	//otra prueba
+	method prueba(){
+		return "prueba de pull"
+	}
 }
