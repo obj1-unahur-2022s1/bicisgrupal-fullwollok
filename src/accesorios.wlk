@@ -15,7 +15,8 @@ object canasto {
 	method esLuminoso() = false
 }
 
-object morralDeBici {
+
+class MorralDeBici {
 	var property largo
 	var property ojoDeGato
 	
