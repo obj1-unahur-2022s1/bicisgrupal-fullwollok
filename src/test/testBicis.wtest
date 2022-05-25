@@ -5,14 +5,9 @@ describe"pruebas de bicis"{
 	var morral1 = new MorralDeBici(largo=21, ojoDeGato=true)
 	var morral2 = new MorralDeBici(largo=6, ojoDeGato=false)
 	var bici1 = new Bicicleta(rodado = 28,largo = 150,marca ="Olmo", accesorios = #{farolito})
-<<<<<<< HEAD:src/testBicis.wtest
-	var bici2 = new Bicicleta(rodado = 26,largo = 110,marca ="Legnano", accesorios = #{farolito, canasto, morralDeBici})
-	var bici3 = new Bicicleta(rodado = 20,largo = 90,marca ="Legnano", accesorios = #{morralDeBici})
-=======
 	var bici2 = new Bicicleta(rodado = 26,largo = 110,marca ="Legnano", accesorios = #{farolito, canasto, morral1})
 	var bici3 = new Bicicleta(rodado = 20,largo = 90,marca ="Legnano", accesorios = #{morral2})
 
->>>>>>> 84c55a61487a0f3822843bf5908d8d197ada0499:src/test/testBicis.wtest
 	
 	test "bici1: altura 85, velocidad de crucero 34, carga 0, peso 14.5 (14 de la bici + 0.5 del farolito),
 			 tiene luz (por el farolito), tiene 1 accesorio liviano."{
