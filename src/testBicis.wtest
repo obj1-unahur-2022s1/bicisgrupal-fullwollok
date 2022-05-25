@@ -6,7 +6,6 @@ describe"pruebas de bicis"{
 	var bici2 = new Bicicleta(rodado = 26,largo = 110,marca ="Legnano", accesorios = #{farolito, canasto, morralDeBici})
 	var bici3 = new Bicicleta(rodado = 20,largo = 90,marca ="Legnano", accesorios = #{morralDeBici})
 	
-	
 	test "bici1: altura 85, velocidad de crucero 34, carga 0, peso 14.5 (14 de la bici + 0.5 del farolito),
 			 tiene luz (por el farolito), tiene 1 accesorio liviano."{
 		assert.equals(85, bici1.altura())
@@ -41,4 +40,5 @@ describe"pruebas de bicis"{
 		assert.notThat(bici3.tieneLuz())
 		assert.equals(0, bici3.cantAccesoriosLivianos())		
 	}
+	
 }

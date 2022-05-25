@@ -22,6 +22,7 @@ object morralDeBici {
 	method peso() = 1.2
 	method carga() = largo / 3
 	method esLuminoso() = ojoDeGato
+	
 }
 
 
