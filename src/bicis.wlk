@@ -16,6 +16,25 @@ class Bicicleta{
 	method accesorios() = accesorios
 	
 	method esCompanera(unaBici){
-		return marca == unaBici.marca() && largo <= 10 && unaBici.largo() <= 10
+		return self.esMismaMarca(unaBici) && self.noDifierenDeLargo(unaBici) && self.noSonIguales(unaBici)
+	}
+	
+	method esMismaMarca(unaBici){
+		return marca == unaBici.marca()
+		}
+	
+	method noDifierenDeLargo(unaBici){
+		var salida 
+		if(largo > unaBici.largo()){
+			salida = (largo - unaBici.largo()) <= 10
+		}
+		else{
+			salida = (unaBici.largo() - largo) <= 10
+		}
+		return salida
+	}
+	
+	method noSonIguales(unaBici){
+		return unaBici != self
 	}
 }
