@@ -15,4 +15,7 @@ class Deposito {
 	method bicisLargasDeMasDe(largo) = bicicletas.filter({b => b.largo() > largo })
 	method cargaTotalBicisLargas() = self.bicisLargasDeMasDe(170).sum{b => b.carga()}
 	method cantidadDeBicisSinAccesorios() = bicicletas.count{b => b.accesorios().isEmpty()}
+	method esCompanera(unaBici){
+		return bicicletas.filter{b => b.esCompanera(unaBici)}
+	}
 }

@@ -14,4 +14,8 @@ class Bicicleta{
 
 	method cantAccesoriosLivianos() = accesorios.count({a => a.peso() < 1})
 	method accesorios() = accesorios
+	
+	method esCompanera(unaBici){
+		return marca == unaBici.marca() && largo <= 10 && unaBici.largo() <= 10
+	}
 }
