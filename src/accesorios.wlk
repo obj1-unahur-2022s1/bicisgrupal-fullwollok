@@ -27,3 +27,7 @@ class MorralDeBici {
 }
 
 
+/*
+ Para crear nuevos accesorios necesitariamos definir nuevos objetos o clases dependientemente de la cantidad que queramos instanciar.
+ Cada instancia u objeto debe contener el contrato con los mensajes peso, carga y esLuminoso para respetar el polimorfismo.
+*/

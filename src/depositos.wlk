@@ -18,4 +18,5 @@ class Deposito {
 	method esCompanera(unaBici){
 		return bicicletas.filter{b => b.esCompanera(unaBici)}
 	}
+	
 }
